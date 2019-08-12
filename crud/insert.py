@@ -8,7 +8,7 @@ try:
                                   database="testdb")
     cursor = connection.cursor()
     postgres_insert_query = """insert into testschema.client (name, last_name) values (%s,%s)"""
-    record_to_insert = ('kirill','igorev')
+    record_to_insert = ('sidr','ivanov')
     cursor.execute(postgres_insert_query, record_to_insert)
     connection.commit()
     count = cursor.rowcount
