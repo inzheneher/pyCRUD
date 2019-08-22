@@ -2,6 +2,7 @@ import psycopg2
 from crud.connection import Connection
 from utils.config import Config
 
+
 def insert():
     try:
         connection = Connection(Config()).get_connection()
